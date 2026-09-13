@@ -192,6 +192,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(120, 120, 128, 0.55);
   }
+  /* 对话框内容滚动条：上下收缩一个圆角半径，两端停在圆角切线位置 */
+  [data-slot="dialog-content"]::-webkit-scrollbar-track {
+    margin-top: calc(var(--radius) * 1.4);
+    margin-bottom: calc(var(--radius) * 1.4);
+  }
 }
 
 /* ============================================================
